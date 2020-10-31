@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trispace', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /*wraps flex elements in one line*/
+    min-height: 100vh;
+}
+
+.gbox{
+    position: relative;
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.gbox::before{
+    content: ''; /*replaces an element with some generated value*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(25px);
+    transform: translateY(30px) scale(0.8);
+}
+
+.gbox:nth-child(1), .gbox:nth-child(1)::before{
+    background: linear-gradient(135deg, #0F2027, #2C5364);
+}
+
+.gbox:nth-child(2),
+.gbox:nth-child(2)::before {
+    background: linear-gradient(135deg, #8E2DE2, #4A00E0);
+}
+
+.gbox:nth-child(3),
+.gbox:nth-child(3)::before {
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+}
+
+.gbox h2{
+    position: relative;
+    z-index: 1; /* stack order in front so highest*/
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
