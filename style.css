@@ -29,6 +29,7 @@ header{
 
 .projectone{
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 12.5%;
 }
 
