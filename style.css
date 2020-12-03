@@ -7,6 +7,8 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'IBM Plex Mono', monospace;
+    text-align:justify;
+    word-spacing:-3px;
 }
 
 header {
