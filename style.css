@@ -78,7 +78,6 @@ header {
         display: block;
         position: relative;
         margin-bottom: 12.5%;
-        overflow-x: hidden !important;
     }
 
     .gshadow {
