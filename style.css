@@ -58,7 +58,9 @@ body>header>h2 {
 }
 
 @media screen and (max-width: 768px) {
-    html, body {
+
+    html,
+    body {
         width: 95%;
         margin: auto;
         padding: 0;
@@ -88,7 +90,7 @@ body>header>h2 {
         font-size: 15.5px;
         color: #f4f1d0;
         font-weight: 600;
-        word-spacing: normal;        
+        word-spacing: normal;
     }
 
     .projectone {
@@ -106,5 +108,29 @@ body>header>h2 {
         margin-top: 2%;
         -webkit-box-shadow: 9px 4px 50px 9px rgba(0, 0, 0, 0.3);
         box-shadow: 9px 4px 50px 9px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .desc>p {
+        margin-top: 5% !important;
+        font-size: 25px;
+        color: #f4f1d0;
+        font-weight: 600;
+    }
+
+    header {
+        text-align: center;
+        font-size: 2.0em;
+        color: #f4f1d0;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    .projectone {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin-bottom: 10%;
     }
 }
